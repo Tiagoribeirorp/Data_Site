@@ -1,0 +1,147 @@
+:root {
+  --primary: #00AE9D;
+  --primary-light: #e8f7f5;
+  --primary-soft: #eefaf8;
+
+  --dark: #003641;
+  --text: #1f2937;
+  --muted: #6b7280;
+
+  --bg-light: #f4fbfa;
+  --white: #ffffff;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+/* LAYOUT */
+section {
+  padding: 110px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* TYPO */
+h1,
+h2,
+h3 {
+  color: var(--dark);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: #fff;
+  padding: 16px 42px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  height: 48px;
+}
+
+.btn:hover {
+  background: #009688;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 174, 157, 0.25);
+}
+
+/* LINK SECUNDÁRIO (CTA LEVE) */
+.link-secondary {
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.link-secondary:hover {
+  text-decoration: underline;
+}
+
+/* CARD BASE */
+.card {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* TAGS */
+.tag {
+  font-size: 0.75rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* FOOTER */
+footer {
+  background: var(--dark);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+footer p {
+  opacity: 0.9;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  section {
+    padding: 90px 20px;
+  }
+
+  .container {
+    grid-template-columns: 1fr !important;
+    gap: 60px !important;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.3rem !important;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
