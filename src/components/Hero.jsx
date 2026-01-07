@@ -73,7 +73,7 @@ export default function Hero() {
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
         >
           <p style={{ color: "var(--primary)", marginBottom: 12 }}>
-            dados → clareza → decisão
+            Dados → Clareza → Decisão
           </p>
 
           <h1
@@ -85,7 +85,7 @@ export default function Hero() {
             }}
           >
             Clareza nos números para
-            <br />
+            
             decisões mais seguras
           </h1>
 
